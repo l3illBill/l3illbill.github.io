@@ -542,7 +542,7 @@ https://templatemo.com/tm-531-reflux
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/lightbox.js"></script>
@@ -587,7 +587,22 @@ https://templatemo.com/tm-531-reflux
           }
         });
       };
+  $(document).ready(function () {
+    var elem = document.querySelector(".isotope-box");
+    var iso = new Isotope(elem, {
+      itemSelector: ".isotope-item",
+      layoutMode: "fitRows",
+    });
 
+    // ใช้ imagesLoaded เพื่อตรวจสอบว่ารูปภาพทั้งหมดโหลดเสร็จแล้ว
+    imagesLoaded(elem, function () {
+      iso.layout();
+    });
+
+    // ถ้ามี Lazy Load ให้จัดเรียงใหม่หลังจากรูปโหลดเสร็จ
+    document.addEventListener("lazyloaded", function () {
+      iso.layout();
+    });
       $(".main-menu").on("click", "a", function(e) {
         e.preventDefault();
         showSection($(this).attr("href"), true);
@@ -596,6 +611,7 @@ https://templatemo.com/tm-531-reflux
       $(window).scroll(function() {
         checkSection();
       });
+      
     </script>
   </body>
 </html>
