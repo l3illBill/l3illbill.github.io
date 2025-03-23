@@ -565,14 +565,14 @@ section.my-skill .section-heading {
     border-radius: 5px;
 }
 
-/*.lazyload {
+.lazyload {
     background: #f7f7f7;
 }
 
 .lazyloading {
     background: #f7f7f7 url(//afarkas.github.io/lazysizes/assets/imgs/loader.gif) no-repeat center;
     min-height: 60px;
-}/*
+}
 
 figure.snip1321 {
   overflow: hidden;
