@@ -347,6 +347,7 @@ html {
     font-size: 32px;
     font-weight: 700;
     color: #42c037;
+    padding-top: 50px;
 }
 
 .section-heading .line-dec {
@@ -717,7 +718,7 @@ section.contact-me {
     }
 }
 
-@media screen and (max-width: 1680px) and (min-width: 846px) { 
+@media screen and (max-width: 980px) and (min-width: 846px) { 
     .menu .social-network ul li a {
         width: 36px;
         height: 36px;
@@ -733,7 +734,7 @@ section.contact-me {
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 980px) {
     .menu {
         left: 0%;
     }
@@ -760,7 +761,7 @@ section.contact-me {
     padding-right: 0;
 }
 
-@media screen and (max-width: 1280px) and (min-width: 846px) {
+@media screen and (max-width: 980px) and (min-width: 846px) {
     .menu {
         width: 25%;
     }
@@ -835,4 +836,63 @@ section.contact-me {
     .isotope-toolbar {
         margin-bottom: 20px;
     }
+}
+
+.top-header-menu {
+  display: none;
+  background-color: #1e1e1e;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.top-header-menu .container {
+  display: flex;
+  justify-content: center;
+}
+
+.top-header-menu .main-menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.top-header-menu .main-menu li {
+  margin: 0 15px;
+}
+
+.top-header-menu .main-menu li a {
+  color: #31c438;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none; 
+  transition: color 0.3s;
+}
+
+.top-header-menu .main-menu li a:hover {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 845px) {
+  .top-header-menu {
+    display: block;
+  }
+
+  .responsive-nav {
+    display: none;
+  }
+
+  .section {
+    width: 94%;
+    right: 3%;
+    left: 3%;
+  }
+
+  .isotope-item {
+    width: 94%;
+    margin: 3%;
+  }
 }
