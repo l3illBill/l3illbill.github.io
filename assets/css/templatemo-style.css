@@ -567,6 +567,7 @@ section.my-skill .section-heading {
 
 .lazyload {
     background: #f7f7f7;
+    min-height: 300px;
 }
 
 .lazyloading {
