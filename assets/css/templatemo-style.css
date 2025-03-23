@@ -116,7 +116,7 @@ html {
     height: 70px;
     line-height: 70px;
     display: inline-block;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 700;
     color: #31c438;
     width: 100%;
@@ -867,7 +867,7 @@ section.contact-me {
 
 .top-header-menu .main-menu li a {
   color: #31c438;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 700;
   text-decoration: none; 
   transition: color 0.3s;
